@@ -2,19 +2,67 @@
 
 \begin{document}
 
-\newcommand{\textttEx}{\textbackslash{}texttt\{\} }
-\newcommand{\textsfEx}{\textbackslash{}textsf\{\} }
+\newcommand{\textttEx}{\textbackslash{}texttt\{\}}
+\newcommand{\textsfEx}{\textbackslash{}textsf\{\}}
+\newcommand{\textrmEx}{\textbackslash{}textrm\{\}}
+
+\newcommand{\rmfamilyEx}{\textbackslash{}rmfamily}
+\newcommand{\sffamilyEx}{\textbackslash{}sffamily}
+\newcommand{\ttfamilyEx}{\textbackslash{}ttfamily}
 
 %These commands allow changing the default font throughout the entire page
 %the moment they are called
-%\sfdefault
-%\rmdefault
+%\sffamily
+%\rmfamily
 
-\section{\textsf{\LaTeX\ resources on the internet} (\textsfEx sans-serif font)} 
-The best place for downloaded LaTeX related software is CTAN.
-Its address is \texttt{http://www.ctan.org} (\textttEx typewriter)
+\title{Example 4}
+\date{\today}
+\author{Jave}
+\maketitle
 
-%\sfdefault Is this roman or sans-serif?
+\section{\textsf{\LaTeX\ resources (\textsfEx) \textrm{on the internet (\textrmEx)} } }
+
+The best place for downloaded LaTeX \texttt{related software is CTAN.}
+Its address is \texttt{http://www.ctan.org} (\textttEx)\\
+
+If you don't want to specify where in the text you wish to change the font, these commands are needed
+\begin{itemize}
+  \item \rmfamily Roman font (\rmfamilyEx)
+  \item \sffamily Sans-serif font (\sffamilyEx)
+  \item \ttfamily Typewriter font (\ttfamilyEx)
+\end{itemize}
+
+If you do want to specify where in the text, use these. 
+\begin{itemize}
+  \item \textrm{Roman font} (\textrmEx)
+  \item \textsf{Sans-serif font} (\textsfEx)
+  \item \texttt{Typewriter font} (\textttEx)
+\end{itemize}
+
+\noindent To experiment the three pre-defined family fonts (the first three):
+
+  \subsection{The Roman font (default font with \rmfamilyEx)}
+  \rmfamily
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mi id justo iaculis lobortis vitae sed ligula. Nullam a ipsum aliquet, malesuada mi sit amet, mollis massa.
+Nulla ultrices libero vel tortor pulvinar, in viverra velit sagittis. Praesent vestibulum efficitur dignissim. Sed nec urna accumsan metus venenatis fermentum. 
+Donec semper consequat nibh. 
+
+\ttfamily
+  \subsection{\ttfamily The typewriter font (\ttfamilyEx)} 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mi id justo iaculis lobortis vitae sed ligula. Nullam a ipsum aliquet, malesuada mi sit amet, mollis massa.
+Nulla ultrices libero vel tortor pulvinar, in viverra velit sagittis. Praesent vestibulum efficitur dignissim. Sed nec urna accumsan metus venenatis fermentum. 
+Donec semper consequat nibh. 
+
+\sffamily 
+  \subsection{The Sans-serif font (\sffamilyEx)} 
+  \textbf{Notice that the subsection is not in sans-serif because (\sffamilyEx) is out of scope}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non mi id justo iaculis lobortis vitae sed ligula. 
+Nullam a ipsum aliquet, malesuada mi sit amet, mollis massa. Nulla ultrices libero vel tortor pulvinar, in viverra velit sagittis. Praesent vestibulum efficitur dignissim. 
+Sed nec urna accumsan metus venenatis fermentum. Donec semper consequat nibh.\
+
+
+
 
 \end{document}
-\end{document}
+
+
