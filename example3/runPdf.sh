@@ -1,3 +1,4 @@
+
 #!/bin/bash
-pdflatex *.tex
-evince *.pdf
+../runPdfScript.sh
+

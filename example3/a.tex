@@ -10,11 +10,26 @@
 %\emph uses italic by default
 %\emph{\emph} goes back to normal (it's just made that way I guess)
 %\textsc means slanted text
-Text can be \emph{emphasized} (\textbackslash{}emph\{\}).
-Besides being \textit{italic} (\textbackslash{}textit\{\}) words could be \textbf{bold}, (\textbackslash{}bold\{\})
-\textsl{slanted} (\textbackslash{}textsl\{\}) or typeset in \textsc{Small Caps} (\textbackslash{}textsc\{\}).
+%This is the old one, it looks ugly
+% Text can be \emph{emphasized} (\textbackslash{}emph\{\}).
+% Besides being \textit{italic} (\textbackslash{}textit\{\}) words could be \textbf{bold}, (\textbackslash{}textbf\{\})
+% \textsl{slanted} (\textbackslash{}textsl\{\}) or typeset in \textsc{Small Caps} (\textbackslash{}textsc\{\}).
+% Such commands can be \textit{\textbf{nested}} (\textbackslash{}texit\{\textbackslash{}textbf\{\}\}).
+% \emph{See how \emph{emphasizing} looks when nested.} (\textbackslash{}emph\{\textbackslash{}emp\{\}\})
+
+%we can instead make our own commands (shorthand-commands) with the command /newcommand
+%the ending _ex stands for "example"
+\newcommand{\emphEx}{\textbackslash{}emph\{\})}
+\newcommand{\textitEx}{\textbackslash{}textit\{\}}
+\newcommand{\textbfEx}{\textbackslash{}textbf\{\}}
+\newcommand{\textslEx}{\textbackslash{}textsl\{\}}
+\newcommand{\textscEx}{\textbackslash{}textsc\{\}}
+
+Text can be \emph{emphasized} (\emphEx).
+Besides being \textit{italic} (\textitEx) words could be \textbf{bold}, (\textbfEx)
+\textsl{slanted} (\textslEx) or typeset in \textsc{Small Caps} (\textscEx).
 Such commands can be \textit{\textbf{nested}} (\textbackslash{}texit\{\textbackslash{}textbf\{\}\}).
 \emph{See how \emph{emphasizing} looks when nested.} (\textbackslash{}emph\{\textbackslash{}emp\{\}\})
-\end{document}
 
+\end{document}
 \end{document}
