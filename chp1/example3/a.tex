@@ -1,0 +1,48 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\begin{document}
+\title{Example 3: Basic Formatting}
+\author{jave}
+\date{\today}
+\maketitle
+
+%notice how every text-related commands that change the "looks" start with text***?
+%\emph uses italic by default
+%\emph{\emph} goes back to normal (it's just made that way I guess)
+%\textsc means slanted text
+%This is the old one, it looks ugly
+% Text can be \emph{emphasized} (\textbackslash{}emph\{\}).
+% Besides being \textit{italic} (\textbackslash{}textit\{\}) words could be \textbf{bold}, (\textbackslash{}textbf\{\})
+% \textsl{slanted} (\textbackslash{}textsl\{\}) or typeset in \textsc{Small Caps} (\textbackslash{}textsc\{\}).
+% Such commands can be \textit{\textbf{nested}} (\textbackslash{}texit\{\textbackslash{}textbf\{\}\}).
+% \emph{See how \emph{emphasizing} looks when nested.} (\textbackslash{}emph\{\textbackslash{}emp\{\}\})
+
+%we can instead make our own commands (shorthand-commands) with the command /newcommand
+%the ending _ex stands for "example"
+\newcommand{\emphEx}{\textbackslash{}emph\{\})}
+\newcommand{\textitEx}{\textbackslash{}textit\{\}}
+\newcommand{\textbfEx}{\textbackslash{}textbf\{\}}
+\newcommand{\textslEx}{\textbackslash{}textsl\{\}}
+\newcommand{\textscEx}{\textbackslash{}textsc\{\}}
+\newcommand{\underlineEx}{\textbackslash{}underline\{\}}
+
+Text can be \emph{emphasized} (\emphEx).
+Besides being \textit{italic} (\textitEx) words could be \textbf{bold}, (\textbfEx)
+\textsl{slanted} (\textslEx) or typeset in \textsc{Small Caps} (\textscEx).
+Such commands can be \textit{\textbf{nested}} (\textbackslash{}texit\{\textbackslash{}textbf\{\}\}).
+\emph{See how \emph{emphasizing} looks when nested} (\textbackslash{}emph\{\textbackslash{}emp\{\}\}).
+
+It can also \underline{underline texts}\\
+
+List of formats:
+\begin{itemize}
+    \item \emph{Emphasize format} (\emphEx)
+    \item \textit{Italicize format} (\textitEx same as \emphEx)
+    \item \textbf{Bold format} (\textbfEx)
+    \item \textsl{Slanted format} (\textslEx)
+    \item \textsc{Small caps format} (\textscEx)
+    \item \underline{Underline format} (\underlineEx)
+\end{itemize}
+
+\end{document}
+\end{document}
