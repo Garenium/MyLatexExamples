@@ -1,0 +1,43 @@
+\documentclass[letterpaper, 12pt]{article}
+
+\begin{document}
+
+
+\title{Example 5: Font Sizes}
+\date{\today}
+\author{Jave}
+\maketitle
+
+\newcommand{\tinyEx}{\textbackslash{}tiny}
+\newcommand{\scriptsizeEx}{\textbackslash{}scriptsize}
+\newcommand{\footnotesizeEx}{\textbackslash{}footnotesize}
+\newcommand{\smallEx}{\textbackslash{}small}
+\newcommand{\normalsizeEx}{\textbackslash{}normalsize}
+\newcommand{\largeEx}{\textbackslash{}large}
+\newcommand{\LargeEx}{\textbackslash{}Large}
+\newcommand{\LARGEEx}{\textbackslash{}LARGE}
+\newcommand{\hugeEx}{\textbackslash{}huge}
+\newcommand{\HugeEx}{\textbackslash{}Huge}
+
+\newcommand{\beginEx}{\textbackslash{}begin\{\}}
+\newcommand{\Exend}{\textbackslash{}end\{\}} %compiler doesn't like endEx
+
+\section{Different font size declarations}
+% \noindent \tinyEx{} tiny 
+
+\noindent \tiny tiny \scriptsize script \footnotesize footnote \small small, 
+\normalsize get \large big \Large and \LARGE bigger, \huge huge \newline
+\Huge and gigantic!
+
+\vspace{10.0mm}
+\normalsize
+\noindent From smallest to largest: \newline
+\tinyEx{} \scriptsizeEx{} \footnotesizeEx{} \smallEx{} \normalsizeEx{}
+\largeEx{} \LargeEx{} \LARGEEx{} \hugeEx{} \HugeEx{}
+
+Another way to adjust the font size is by using 
+an environment with declarations (\beginEx{} and \Exend)
+
+\end{document}
+
+ 
